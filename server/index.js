@@ -9,7 +9,7 @@ const cors = require("cors");
 
 
 app.use(express.json());
-app.use(cors( { origin: "http://localhost:3000" }));
+app.use(cors( { origin: ["http://localhost:3000", "https://auth-ebon-kappa.vercel.app/"] }));
 
 
 app.post("/register", async (req, res) => {
